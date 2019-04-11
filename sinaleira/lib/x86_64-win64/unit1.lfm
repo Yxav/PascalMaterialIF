@@ -1,0 +1,143 @@
+object Form1: TForm1
+  Left = 311
+  Height = 455
+  Top = 152
+  Width = 328
+  Caption = 'Form1'
+  ClientHeight = 455
+  ClientWidth = 328
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  LCLVersion = '1.8.4.0'
+  object Shape1: TShape
+    Left = 24
+    Height = 322
+    Top = 56
+    Width = 168
+    Brush.Color = clMenuText
+  end
+  object ballred: TShape
+    Left = 64
+    Height = 80
+    Top = 72
+    Width = 88
+    Brush.Color = clDefault
+    Shape = stCircle
+  end
+  object ballyel: TShape
+    Left = 64
+    Height = 80
+    Top = 176
+    Width = 88
+    Brush.Color = clDefault
+    Shape = stCircle
+  end
+  object ballgr: TShape
+    Left = 64
+    Height = 80
+    Top = 280
+    Width = 88
+    Brush.Color = clDefault
+    Shape = stCircle
+  end
+  object btnchan: TButton
+    Left = 230
+    Height = 26
+    Top = 104
+    Width = 76
+    Caption = 'Ajustes'
+    OnClick = btnchanClick
+    TabOrder = 0
+  end
+  object edred: TEdit
+    Left = 228
+    Height = 23
+    Top = 183
+    Width = 80
+    TabOrder = 1
+    Visible = False
+  end
+  object edyel: TEdit
+    Left = 228
+    Height = 23
+    Top = 231
+    Width = 80
+    TabOrder = 2
+    Visible = False
+  end
+  object edgr: TEdit
+    Left = 228
+    Height = 23
+    Top = 287
+    Width = 80
+    TabOrder = 3
+    Visible = False
+  end
+  object lbver: TLabel
+    Left = 228
+    Height = 15
+    Top = 160
+    Width = 54
+    Caption = 'Vermelho:'
+    ParentColor = False
+    Visible = False
+    OnClick = lbverClick
+  end
+  object lbyel: TLabel
+    Left = 228
+    Height = 15
+    Top = 208
+    Width = 48
+    Caption = 'Amarelo:'
+    ParentColor = False
+    Visible = False
+  end
+  object lbgr: TLabel
+    Left = 228
+    Height = 15
+    Top = 272
+    Width = 33
+    Caption = 'Verde:'
+    ParentColor = False
+    Visible = False
+  end
+  object btnsai: TButton
+    Left = 228
+    Height = 25
+    Top = 416
+    Width = 75
+    Caption = 'Sair'
+    OnClick = btnsaiClick
+    TabOrder = 4
+  end
+  object btnon: TButton
+    Left = 232
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Ligar'
+    OnClick = btnonClick
+    TabOrder = 5
+  end
+  object timered: TTimer
+    Enabled = False
+    Interval = 5000
+    OnTimer = timeredTimer
+    left = 96
+    top = 96
+  end
+  object timeryel: TTimer
+    Enabled = False
+    Interval = 2000
+    OnTimer = timeryelTimer
+    left = 96
+    top = 200
+  end
+  object timergr: TTimer
+    Enabled = False
+    Interval = 7000
+    OnTimer = timergrTimer
+    left = 96
+    top = 312
+  end
+end
