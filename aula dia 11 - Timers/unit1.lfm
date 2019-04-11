@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 329
+  Height = 418
+  Top = 126
+  Width = 475
+  Caption = 'Form1'
+  ClientHeight = 418
+  ClientWidth = 475
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object lbshow: TLabel
+    Left = 144
+    Height = 1
+    Top = 114
+    Width = 1
+    ParentColor = False
+  end
+  object btnshow: TButton
+    Left = 48
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Show'
+    OnClick = btnshowClick
+    TabOrder = 0
+  end
+  object btnon: TButton
+    Left = 48
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Ligar'
+    OnClick = btnonClick
+    TabOrder = 1
+  end
+  object btnof: TButton
+    Left = 48
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Desligar'
+    OnClick = btnofClick
+    TabOrder = 2
+  end
+  object Shape1: TShape
+    Left = 176
+    Height = 65
+    Top = 272
+    Width = 65
+    Brush.Color = clCaptionText
+  end
+  object Shape2: TShape
+    Left = 184
+    Height = 49
+    Top = 280
+    Width = 49
+    Brush.Color = clNavy
+    Shape = stCircle
+  end
+  object TrackBar1: TTrackBar
+    Left = 152
+    Height = 41
+    Top = 360
+    Width = 128
+    Max = 5000
+    OnChange = TrackBar1Change
+    Position = 0
+    TabOrder = 3
+  end
+  object btativa: TButton
+    Left = 344
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Ligar'
+    OnClick = btativaClick
+    TabOrder = 4
+  end
+  object Shape3: TShape
+    Left = 339
+    Height = 64
+    Top = 265
+    Width = 80
+    Brush.Color = clFuchsia
+    Shape = stCircle
+  end
+  object timer1: TTimer
+    OnTimer = timer1Timer
+    left = 24
+    top = 40
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 5000
+    OnTimer = Timer2Timer
+    left = 96
+    top = 40
+  end
+  object Timer3: TTimer
+    Interval = 10000
+    OnTimer = Timer3Timer
+    left = 168
+    top = 40
+  end
+  object Timerled: TTimer
+    Enabled = False
+    Interval = 1300
+    OnTimer = TimerledTimer
+    left = 96
+    top = 224
+  end
+  object Timerball: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = TimerballTimer
+    left = 288
+    top = 224
+  end
+end
