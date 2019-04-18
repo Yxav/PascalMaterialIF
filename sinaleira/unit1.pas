@@ -69,10 +69,11 @@ end;
 procedure TForm1.btnonClick(Sender: TObject);
 begin
 
-
-  timered.Enabled:=True;
-  timeryel.Enabled:=True;
   timergr.Enabled:=True;
+  timeryel.Enabled:=True;
+  timered.Enabled:=True;
+
+
   btnchan.Visible:=False;
   botao:=False;
   btnon.Caption:='Desligar';
@@ -123,14 +124,14 @@ end;
 procedure TForm1.timergrTimer(Sender: TObject);
 begin
 
-  ballyel.Brush.Color:=clYellow;
+  ballgr.Brush.Color:=clGreen;
 
 end;
 
 procedure TForm1.timeryelTimer(Sender: TObject);
 begin
 
-  ballgr.Brush.Color:=clGreen;
+  ballyel.Brush.Color:=clYellow;
 end;
 
 end.

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 311
+  Left = 217
   Height = 455
-  Top = 152
+  Top = 157
   Width = 328
   Caption = 'Form1'
   ClientHeight = 455
@@ -14,22 +14,24 @@ object Form1: TForm1
     Height = 322
     Top = 56
     Width = 168
-    Brush.Color = clMenuText
+    Brush.Color = clBackground
   end
   object ballred: TShape
     Left = 64
     Height = 80
     Top = 72
     Width = 88
-    Brush.Color = clDefault
+    Brush.Color = 8947967
+    ParentShowHint = False
     Shape = stCircle
+    ShowHint = True
   end
   object ballyel: TShape
     Left = 64
     Height = 80
     Top = 176
     Width = 88
-    Brush.Color = clDefault
+    Brush.Color = 9699327
     Shape = stCircle
   end
   object ballgr: TShape
@@ -37,7 +39,7 @@ object Form1: TForm1
     Height = 80
     Top = 280
     Width = 88
-    Brush.Color = clDefault
+    Brush.Color = 9961367
     Shape = stCircle
   end
   object btnchan: TButton
@@ -111,7 +113,7 @@ object Form1: TForm1
     TabOrder = 4
   end
   object btnon: TButton
-    Left = 232
+    Left = 231
     Height = 25
     Top = 64
     Width = 75
